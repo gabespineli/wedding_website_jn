@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jerome & Nica — 03.21.26</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="The wedding of Jerome & Nica — 03.21.26">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Jerome & Nica</div>
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#entourage">Entourage</a>
+          <a href="#details">Details</a>
+          <a href="#faqs">FAQs</a>
+          <a class="button" href="#rsvp">RSVP</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HOMEPAGE -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title" data-couple-title>
+          <span class="top">Jerome</span>
+          <span class="bottom">& Nica</span>
+        </h1>
+        <div class="date"><span data-date>03.21.26</span></div>
+        <div class="cta">
+          <a class="button" href="./rsvp.html">RSVP</a>
+        </div>
+        <div class="deadline-note"><small data-deadline>RSVP deadline</small></div>
+        <div class="countdown container" id="countdown" role="timer" aria-live="polite">
+          <div class="unit"><div class="num" id="cd-days">0</div><div class="label">Days</div></div>
+          <div class="unit"><div class="num" id="cd-hours">00</div><div class="label">Hours</div></div>
+          <div class="unit"><div class="num" id="cd-minutes">00</div><div class="label">Minutes</div></div>
+          <div class="unit"><div class="num" id="cd-seconds">00</div><div class="label">Seconds</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container locations" aria-label="Location">
+      <h2 class="section-title">Location</h2>
+      <div class="card">
+        <strong>Ceremony & Reception</strong><br>
+        <span data-ceremony-venue>Robinsons Magnolia</span><br>
+        <small data-ceremony-address>Aurora Blvd, Quezon City</small><br><br>
+        <a class="button outline" data-ceremony-map-open href="#" rel="noopener" target="_blank">Open in Google Maps</a>
+        <iframe class="map-embed" data-ceremony-map-embed loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="section container" aria-label="Wedding Timeline">
+      <h2 class="section-title">The Timeline</h2>
+      <div class="timeline">
+        <div class="step"><b>Entourage Procession</b><br><small>Time (TBD)</small></div>
+        <div class="step"><b>Wedding Ceremony</b><br><small>Time (TBD)</small></div>
+        <div class="step"><b>Cocktails & Photos</b><br><small>Time (TBD)</small></div>
+        <div class="step"><b>Program & Fun</b><br><small>Time (TBD)</small></div>
+        <div class="step"><b>Dances</b><br><small>Time (TBD)</small></div>
+        <div class="step"><b>Dinner & Photos</b><br><small>Time (TBD)</small></div>
+        <div class="step"><b>Messages & SDE</b><br><small>Time (TBD)</small></div>
+      </div>
+    </section>
+
+    <section class="section container" aria-label="Save the Date">
+      <h2 class="section-title">Save the Date</h2>
+      <div class="card">Video coming soon.</div>
+    </section>
+
+    <!-- ENTOURAGE -->
+    <section class="section container" id="entourage">
+      <h2 class="section-title">The Entourage</h2>
+      <div class="entourage">
+        <div class="col" id="entourage-left" aria-label="Boys/Men"></div>
+        <div class="col" id="entourage-right" aria-label="Girls/Women"></div>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section class="section container" id="details">
+      <h2 class="section-title">Details</h2>
+
+      <div class="section">
+        <h3 class="section-title" style="font-size:clamp(1.4rem,2.4vw,2rem)">Your Guide on Gifts</h3>
+        <div class="info-grid">
+          <div class="card"><p id="gifts-text"></p></div>
+          <div class="card">
+            <b data-gcash-label>GCash</b><br>
+            <img class="qrimg" src="./assets/qr-gcash.svg" alt="GCash QR"/>
+            <div class="small" data-gcash-account></div>
+          </div>
+          <div class="card">
+            <b data-bank-label>Bank Transfer</b><br>
+            <img class="qrimg" src="./assets/qr-bank.svg" alt="Bank QR"/>
+            <div class="small" data-bank-account></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title" style="font-size:clamp(1.4rem,2.4vw,2rem)">Captured Moments</h3>
+        <div class="card" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;align-items:center">
+          <div style="text-align:center">
+            <img class="qrimg" src="./assets/qr-drive.svg" alt="Google Drive Upload QR"/>
+            <div class="small">Scan to upload to our Drive</div>
+          </div>
+          <div>
+            <p>Share your photos & videos with our hashtag: <b data-hashtag>#WhenDestiNICAmeForJEROME</b></p>
+            <p><a class="button outline" data-drive-btn href="#" target="_blank" rel="noopener">Open Shared Drive</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title" style="font-size:clamp(1.4rem,2.4vw,2rem)">Your Guide on Attire</h3>
+        <div class="card">
+          <p>Formal or Semi-formal. Please wear attires within these shades:</p>
+          <div class="palettes"><div class="swatches" id="attire-allowed"></div></div>
+          <p style="margin-top:1rem">Please avoid these colors to keep the theme consistent:</p>
+          <div class="palettes"><div class="swatches" id="attire-avoid"></div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title" style="font-size:clamp(1.4rem,2.4vw,2rem)">Gentle Reminders</h3>
+        <div class="info-grid">
+          <div class="card"><b>Be on time</b><br><small>Please arrive 30 minutes early.</small></div>
+          <div class="card"><b>Finish the event</b><br><small>Stay with us until the end of the program.</small></div>
+          <div class="card"><b>Have fun</b><br><small>Celebrate and enjoy the day!</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS -->
+    <section class="section container faq" id="faqs">
+      <h2 class="section-title">FAQs</h2>
+      <details><summary>Dress code?</summary><p>Formal or semi-formal in neutral tones. See Attire.</p></details>
+      <details><summary>Plus one / Kids?</summary><p>By invitation; adult-only unless specified.</p></details>
+      <details><summary>Parking & transport?</summary><p>Parking available onsite.</p></details>
+      <details><summary>Dietary needs?</summary><p>Let us know via RSVP form.</p></details>
+      <details><summary>Rain plan?</summary><p>Covered spaces available (details TBD).</p></details>
+    </section>
+
+    <!-- BOTTOM RSVP (last section) -->
+    <section class="cta-band" id="rsvp">
+      <div class="container">
+        <h3>We can’t wait to celebrate with you</h3>
+        <p>Kindly confirm your attendance so we can save you a seat.</p>
+        <a class="button" href="./rsvp.html">RSVP Now</a>
+        <div class="deadline-note"><small data-deadline>RSVP deadline</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="small">© <span id="year"></span> Jerome & Nica • <span data-hashtag>#WhenDestiNICAmeForJEROME</span></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="./config.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
